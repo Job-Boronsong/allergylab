@@ -46,7 +46,7 @@ jobs:
         COSIGN_YES: "true"
       run: |
         cosign sign $APP_DIGEST
-        cosign sign $DB_LOADER_DIGEST
+        cosign sign $DB_LOADER_DIGESTcorre
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
